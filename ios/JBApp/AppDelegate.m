@@ -11,6 +11,8 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+#import <NMSSH/NMSSH.h>
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,6 +29,26 @@
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  NMSSHSession *session = [NMSSHSession connectToHost:@"192.168.8.224"
+                                         withUsername:@"root"];
+  
+  
+  if (session.isConnected) {
+    [session authenticateByPassword:@"Swimming42133!"];
+    
+    if (session.isAuthorized) {
+      NSLog(@"Authentication succeeded");
+    }
+  }
+  
+  NSError *error = nil;
+  NSString *response = [session.channel execute:@"killall backboardd" error:&error];
+  
+  NSLog(@"List of my sites: %@", response);
+  
+  
+  
   return YES;
 }
 

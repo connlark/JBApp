@@ -28,23 +28,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "JBApp.app"
-               BlueprintName = "JBApp"
-               ReferencedContainer = "container:JBApp.xcodeproj">
+               BlueprintIdentifier = "28C79A08220DC4CC0061DE82"
+               BuildableName = "libRNCSlider.a"
+               BlueprintName = "RNCSlider"
+               ReferencedContainer = "container:../node_modules/@react-native-community/slider/ios/RNCSlider.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "JBAppTests.xctest"
-               BlueprintName = "JBAppTests"
+               BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
+               BuildableName = "JBApp.app"
+               BlueprintName = "JBApp"
                ReferencedContainer = "container:JBApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -56,16 +56,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "JBAppTests.xctest"
-               BlueprintName = "JBAppTests"
-               ReferencedContainer = "container:JBApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

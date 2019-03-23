@@ -7,8 +7,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.2.1",
+    "@react-native-community/slider": "^1.0.3",
     "react": "16.8.3",
-    "react-native": "0.59.1"
+    "react-native": "0.59.1",
+    "react-native-background-fetch": "^2.5.1",
+    "react-native-local-notifications": "^2.0.0",
+    "react-native-push-notification": "^3.1.2",
+    "react-native-react-native-ssh": "https://github.com/connorlarkin1/react-native-ssh.git",
+    "react-native-really-awesome-button": "^1.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
